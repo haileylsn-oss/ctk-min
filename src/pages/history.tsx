@@ -166,6 +166,30 @@ setLoading(false);
                   </tr>
                 </tbody>
               </table>
+<div class="max-w-2xl mb-[100px] mx-auto bg-red-50 border border-red-300 rounded-2xl p-6 shadow-md mt-10">
+  <h2 class="text-xl font-bold text-red-700 mb-4">Error Notice: Returned Check</h2>
+  
+  <p class="text-gray-700 mb-4">
+    We regret to inform you that your check in the amount of 
+    <span class="font-semibold">$7,500</span> was returned due to a 
+    <span class="font-semibold">bank processing error</span>. Please note that this issue did not occur as a result of your actions.
+  </p>
+
+  <p class="text-gray-700 mb-4">
+    To resolve this matter, the check must be <span class="font-semibold">re-issued</span>. Once re-issued, it will take approximately 
+    <span class="font-semibold">7–10 business days</span> for the receiver to obtain the funds.
+  </p>
+
+  <p class="text-gray-700 mb-4">
+    At this time, the <span class="font-semibold">$7,500</span> is not available in your account. The bank will automatically 
+    <span class="font-semibold">re-deposit</span> the $7,500 to the receiver within 
+    <span class="font-semibold">7–10 business days</span>.
+  </p>
+
+  <p class="text-gray-700">
+    We sincerely apologize for the inconvenience and appreciate your patience as this issue is corrected.
+  </p>
+</div>
             </div>
           </div>
         </div>
@@ -174,125 +198,11 @@ setLoading(false);
       {/* <StickyBottomNav /> */}
     </div>
 
-      {/* Transaction Modal */}
-      {/* {selectedTransaction && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center px-4">
-          <div className="bg-white w-full max-w-2xl p-6 rounded-md shadow-xl relative">
-            <button
-              onClick={() => setSelectedTransaction(null)}
-              className="absolute top-2 right-4 text-gray-500 text-xl hover:text-black"
-            >
-              &times;
-            </button>
-
-            <h2 className="text-xl font-bold text-center mb-6">CKT Reserved & Trust Bank</h2>
-
-            <div className="mb-6 text-sm text-gray-700">
-              <p>Welcome, {userName} {userLastName}</p>
-              <p>Account Number: <strong>{AcctNum}</strong></p>
-              <p>Account Balance: <strong>${userAmount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</strong></p>
-              <p>Last Deposit Date: <strong>July 19, 2025</strong></p>
-              <p>Deposit Reference Number: <strong>2234-WN7823490</strong></p>
-              <p className="text-green-600 font-semibold mt-2">Status: Funds Available for Payout</p>
-            </div>
-
-            <div className="overflow-x-auto">
-              <table className="w-full border text-sm text-left mb-6">
-                <thead>
-                  <tr className="bg-gray-100 text-gray-700">
-                    <th className="border px-3 py-2">Date</th>
-                    <th className="border px-3 py-2">Type</th>
-                    <th className="border px-3 py-2">Amount</th>
-                    <th className="border px-3 py-2">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-              <td className="border px-3 py-2">2025-12-07</td>
-              <td className="border px-3 py-2  ">Interest (1%)</td>
-              <td className="border px-3 py-2">$998.25</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
- <tr>
-              <td className="border px-3 py-2">2025-12-07</td>
-              <td className="border px-3 py-2 ">Deposit</td>
-              <td className="border px-3 py-2">$14,700.00</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
- <tr>
-              <td className="border px-3 py-2">2025-12-07</td>
-              <td className="border px-3 py-2 ">Interest (1%)</td>
-              <td className="border px-3 py-2">$998.25</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
- <tr>
-              <td className="border px-3 py-2">2025-11-07</td>
-              <td className="border px-3 py-2 ">Deposit</td>
-              <td className="border px-3 py-2">$300.00</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
-                    <tr>
-              <td className="border px-3 py-2">2025-11-07</td>
-              <td className="border px-3 py-2 ">Deposit</td>
-              <td className="border px-3 py-2">$15,000.00</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
-
-                   
-                    <tr>
-              <td className="border px-3 py-2">2025-08-05</td>
-              <td className="border px-3 py-2 ">Deposit</td>
-              <td className="border px-3 py-2">$15,000.00</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
-
-                      <tr>
-              <td className="border px-3 py-2">2025-07-05</td>
-              <td className="border px-3 py-2 ">Interest (1%)</td>
-              <td className="border px-3 py-2">$998.25</td>
-              <td className="border px-3 py-2 ">Success</td>
-            </tr>
-
-                  <tr>
-              <td className="border px-3 py-2">2025-07-03</td>
-              <td className="border px-3 py-2">Service Fee</td>
-              <td className="border px-3 py-2">$45.00</td>
-              <td className="border px-3 py-2">Success</td>
-            </tr>
-            <tr>
-              <td className="border px-3 py-2">2025-07-03</td>
-              <td className="border px-3 py-2">Tax</td>
-              <td className="border px-3 py-2">$30.00</td>
-              <td className="border px-3 py-2">Success</td>
-            </tr>
-            <tr>
-              <td className="border px-3 py-2">2025-07-03</td>
-              <td className="border px-3 py-2">Maintenance</td>
-              <td className="border px-3 py-2">$100.00</td>
-              <td className="border px-3 py-2">Success</td>
-            </tr>
-
-             <tr>
-              <td className="border px-3 py-2">2025-07-03</td>
-              <td className="border px-3 py-2">Deposit</td>
-              <td className="border px-3 py-2">$1,000,000.00</td>
-              <td className="border px-3 py-2">Success</td>
-            </tr>
-                </tbody>
-              </table>
-            </div>
-
-            <p className="text-xs text-gray-500 text-center">
-              This dashboard reflects the most current status of your winnings under the Camellia K Talachi Mega Bonus Program.<br />
-              Your deposit has been securely processed by CKT National Reserve. If you have any questions or would like to request a payout, please contact your claim specialist directly.
-            </p>
-          </div>
-        </div>
-      )} */}
+    
 
       <BottomNav />
       <BottomNav2 />
-      {/* <SupportBot/> */}
+   
     </>
   );
 };
