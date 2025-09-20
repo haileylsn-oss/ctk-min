@@ -166,7 +166,7 @@ setLoading(false);
                   </tr>
                 </tbody>
               </table>
-<div className="max-w-2xl mb-[100px] mx-auto bg-red-50 border border-red-300 rounded-2xl p-6 shadow-md mt-10">
+{/* <div className="max-w-2xl mb-[100px] mx-auto bg-red-50 border border-red-300 rounded-2xl p-6 shadow-md mt-10">
   <h2 className="text-xl font-bold text-red-700 mb-4">Error Notice: Returned Check</h2>
   
   <p className="text-gray-700 mb-4">
@@ -189,7 +189,7 @@ setLoading(false);
   <p className="text-gray-700">
     We sincerely apologize for the inconvenience and appreciate your patience as this issue is corrected.
   </p>
-</div>
+</div> */}
             </div>
           </div>
         </div>
