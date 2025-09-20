@@ -136,8 +136,8 @@ setLoading(false);
                 Account Balance: <strong>${userAmount.toLocaleString(undefined, { minimumFractionDigits: 2 })}</strong>
               </p>
               <p>Transaction Date: <strong>{selectedTransaction.date}</strong></p>
-              <p>Deposit Reference Number: <strong>2234-WN7823490</strong></p>
-              <p className="text-green-600 font-semibold mt-2">Status: Funds Available for Payout</p>
+              <p>Deposit Reference Number: <strong>2430-W2209823490</strong></p>
+              <p className="text-green-600 font-semibold mt-2">Status: Funds Available for Payout in 7-10 business days</p>
             </div>
 
             <div className="overflow-x-auto">
@@ -166,27 +166,27 @@ setLoading(false);
                   </tr>
                 </tbody>
               </table>
-<div class="max-w-2xl mb-[100px] mx-auto bg-red-50 border border-red-300 rounded-2xl p-6 shadow-md mt-10">
-  <h2 class="text-xl font-bold text-red-700 mb-4">Error Notice: Returned Check</h2>
+<div className="max-w-2xl mb-[100px] mx-auto bg-red-50 border border-red-300 rounded-2xl p-6 shadow-md mt-10">
+  <h2 className="text-xl font-bold text-red-700 mb-4">Error Notice: Returned Check</h2>
   
-  <p class="text-gray-700 mb-4">
+  <p className="text-gray-700 mb-4">
     We regret to inform you that your check in the amount of 
-    <span class="font-semibold">$7,500</span> was returned due to a 
-    <span class="font-semibold">bank processing error</span>. Please note that this issue did not occur as a result of your actions.
+    <span className="font-semibold">$7,500</span> was returned due to a 
+    <span className="font-semibold">bank processing error</span>. Please note that this issue did not occur as a result of your actions.
   </p>
 
-  <p class="text-gray-700 mb-4">
-    To resolve this matter, the check must be <span class="font-semibold">re-issued</span>. Once re-issued, it will take approximately 
-    <span class="font-semibold">7–10 business days</span> for the receiver to obtain the funds.
+  <p className="text-gray-700 mb-4">
+    To resolve this matter, the check must be <span className="font-semibold">re-issued</span>. Once re-issued, it will take approximately 
+    <span className="font-semibold">7–10 business days</span> for the receiver to obtain the funds.
   </p>
 
-  <p class="text-gray-700 mb-4">
-    At this time, the <span class="font-semibold">$7,500</span> is not available in your account. The bank will automatically 
-    <span class="font-semibold">re-deposit</span> the $7,500 to the receiver within 
-    <span class="font-semibold">7–10 business days</span>.
+  <p className="text-gray-700 mb-4">
+    At this time, the <span className="font-semibold">$7,500</span> is not available in your account. The bank will automatically 
+    <span className="font-semibold">re-deposit</span> the $7,500 to the receiver within 
+    <span className="font-semibold">7–10 business days</span>.
   </p>
 
-  <p class="text-gray-700">
+  <p className="text-gray-700">
     We sincerely apologize for the inconvenience and appreciate your patience as this issue is corrected.
   </p>
 </div>
