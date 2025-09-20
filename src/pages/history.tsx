@@ -171,8 +171,8 @@ setLoading(false);
   
   <p className="text-gray-700 mb-4">
     We regret to inform you that your check in the amount of 
-    <span className="font-semibold">$7,500</span> was returned due to a 
-    <span className="font-semibold">bank processing error</span>. Please note that this issue did not occur as a result of your actions.
+    <span className="font-semibold">$7,500</span> was returned due to a  
+    <span className="font-semibold"> bank processing error</span>. Please note that this issue did not occur as a result of your actions.
   </p>
 
   <p className="text-gray-700 mb-4">
