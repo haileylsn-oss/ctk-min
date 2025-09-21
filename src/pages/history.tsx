@@ -137,7 +137,7 @@ setLoading(false);
               </p>
               <p>Transaction Date: <strong>{selectedTransaction.date}</strong></p>
               <p>Deposit Reference Number: <strong>2430-W2209823490</strong></p>
-              <p className="text-green-600 font-semibold mt-2">Status: Funds Available for Payout in 7-10 business days</p>
+              <p className="text-green-600 font-semibold mt-2">Status: Funds Available for Payout</p>
             </div>
 
             <div className="overflow-x-auto">

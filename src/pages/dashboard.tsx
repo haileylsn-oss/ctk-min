@@ -451,7 +451,7 @@ const [showViewModal, setShowViewModal] = useState(false);
       </div> */}
 
       <p className="text-xs text-gray-500 text-center">
-        This dashboard reflects the most current status of your winnings under the Camellia K Talachi Mega Bonus Program.<br />
+        This dashboard reflects the most current status of your winnings under the Benson Law Firm Mega Bonus Program.<br />
         Your deposit has been securely processed by CKT National Reserve. If you have any questions or would like to request a payout, please contact your claim specialist directly.
       </p>
     </div>
